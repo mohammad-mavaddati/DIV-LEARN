@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0090F5" />
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="dark p-[10px] text-[16px] gap-[50px] flex flex-col bg-[--body-color]">
+    <img src="image/arch_flat.png" id="bg-image" alt="" class="w-full md:w-[70%] fixed -translate-x-[50%] -translate-y-[50%] left-[50%] top-[50%] bg-center bg-no-repeat opacity-[20%]" />
+    <header class="h-[45px] flex justify-between items-center">
+      <div class="md:hidden md:mr-[20px] mr-[5px] p-[5px] md:p-[10px] rounded-[5px] bg-[--theme-color] flex items-center justify-center">
+        <img src="image/search-light.svg" id="header-search-svg-light" alt="#" class="w-[25px] max-w-[25px] md:w-[25px]" />
+      </div>
+      <div id="header-search-form" class="relative w-[32.5%] h-full pr-[25px] hidden md:flex items-center">
+        <input type="search" id="header-search-box" placeholder="search" class="w-full h-full text-[1.1rem] p-[10px] bg-transparent focus:bg-white rounded-[5px] border-[2px] border-solid border-transparent border-b-[--text-1] focus:border-[--theme-color] transition-all duration-[0.2s] ease-linear" />
+      </div>
+      <div id="screen-mode" class="md:mr-[20px] p-[5px] md:p-[10px] rounded-[5px] bg-[--theme-color] flex items-center justify-center">
+        <img src="image/light.svg" alt="" class="l w-[25px] max-w-[25px] md:w-[25px]" id="moon-svg" />
+        <img src="image/dark.svg" alt="" class="d hidden w-[25px] max-w-[25px] md:w-[25px]" id="sun-svg" />
+      </div>
+      <div id="header-logo-div" class="relative w-[85%] md:w-[25%] h-full flex justify-center">
+        <img src="image/logo.png" alt="" id="header-logo-svg" class="w-[200px] max-w-[200px]" />
+      </div>
+      <nav id="header-nav" class="w-[37.5%] h-full text-[--text-1] pl-[25px] *:h-full *:text-[1rem] *:px-[10px] *:rounded-[5px] hidden md:flex justify-evenly items-center">
+        <a href="" id="header-nav-item-1" class="gap-[5px] flex items-center hover:bg-[--theme-color]">
+          <img src="image/category-light.svg" id="header-nav-category-svg-light" alt="" class="l" />
+          <img src="image/category-dark.svg" id="header-nav-category-svg-dark" alt="" class="d hidden" />
+          <span>categories</span>
+        </a href="">
+        <a href="" id="header-nav-item-2" class="gap-[5px] items-center hover:bg-[--theme-color] hidden lg:flex">
+          <img src="image/home-light.svg" id="header-nav-home-svg-light" alt="" class="l" />
+          <img src="image/home-dark.svg" id="header-nav-home-svg-dark" alt="" class="d hidden" />
+          <span>home</span>
+        </a href="">
+        <a href="" id="header-nav-item-3" class="gap-[5px] flex items-center hover:bg-[--theme-color]">
+          <img src="image/info-light.svg" id="header-nav-info-svg-light" alt="" class="l" />
+          <img src="image/info-dark.svg" id="header-nav-info-svg-dark" alt="" class="d hidden" />
+          <span>about us</span>
+        </a href="">
+      </nav>
+      <div class="ml-[30px] md:hidden md:mr-[20px] mr-[5px] p-[5px] md:p-[10px] rounded-[5px] bg-[--theme-color] flex items-center justify-center">
+        <img src="image/menu-light.svg" id="header-menu-svg-light" alt="#" class="w-[25px] max-w-[25px] md:w-[25px] md:hidden" />
+      </div>
+    </header>
+    <main>
+      <p id="grid-1-header" class="mt-[50px] text-[--text-1]">courses</p>
+      <div id="grid-1" class="gap-[20px] mt-[10px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <a href="" id="grid-1-item-1" class="group relative flex flex-col items-center rounded-[5px] border-[3px] border-solid border-[--theme-color] text-white">
+          <!-- <img src="image/arch_flat (1).png" alt="" class="group-hover:translate-x-[500%] z-[1] w-[20%] left-[9%] top-[18%] -translate-x-[50%] -translate-y-[50%]  absolute mix-blend-screen contrast-[10] transition duration-[0.2s] ease-linear"> -->
+          <img src="image/1.jpg" id="grid-1-item-1-img" alt="" class=" w-full" />
+          <span class="pt-[5px] text-[1.1rem] group-hover:opacity-[0] absolute bg-gradient-to-b from-[--g3] via-[--g4] to-[--g5] w-full h-[20%] color-[--text-1] text-center transition duration-[0.2s] ease-linear">see course</span>
+          <div id="grid-1-item-1-info-div" class="group-hover:opacity-[100%] absolute w-full h-full bg-gradient-to-b from-[--g1] to-[--g2] opacity-[0] transition duration-[0.2s] ease-linear flex flex-col items-start gap-[5px] text-white">
+            <p id="grid-1-item-1-course-name" class="flex gap-[5px] flex-1 w-full flex items-center pl-[10px]">
+              <img src="image/info-light.svg" alt="" id="grid-1-item-1-info-svg" />
+              <span>we scrapping with python</span>
+            </p>
+            <p id="grid-1-item-1-teacher-name" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/person.svg" alt="" id="grid-1-item-1-person-svg" />
+              <span>sajad dezianian</span>
+            </p>
+            <p id="grid-1-item-1-price" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/price.svg" alt="" id="grid-1-item-1-price-svg" />
+              <span>2,000,000T</span>
+            </p>
+          </div>
+        </a>
+
+        <a href="" id="grid-1-item-2" class="group relative flex flex-col items-center rounded-[5px] border-[3px] border-solid border-[--theme-color] text-white">
+          <!-- <img src="image/arch_flat (1).png" alt="" class="group-hover:translate-x-[500%] z-[1] w-[20%] left-[9%] top-[18%] -translate-x-[50%] -translate-y-[50%]  absolute mix-blend-screen contrast-[10] transition duration-[0.2s] ease-linear"> -->
+          <img src="image/2.jpg" id="grid-1-item-2-img" alt="" class="w-full" />
+          <span class="pt-[5px] text-[1.1rem] group-hover:opacity-[0] absolute bg-gradient-to-b from-[--g3] via-[--g4] to-[--g5] w-full h-[20%] color-[--text-1] text-center transition duration-[0.2s] ease-linear">see course</span>
+          <div id="grid-1-item-2-info-div" class="group-hover:opacity-[100%] absolute w-full h-full bg-gradient-to-b from-[--g1] to-[--g2] opacity-[0] transition duration-[0.2s] ease-linear flex flex-col items-start gap-[5px] text-white">
+            <p id="grid-1-item-2-course-name" class="flex gap-[5px] flex-1 w-full flex items-center pl-[10px]">
+              <img src="image/info-light.svg" alt="" id="grid-1-item-2-info-svg" />
+              <span>NFT tutorial</span>
+            </p>
+            <p id="grid-1-item-2-teacher-name" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/person.svg" alt="" id="grid-1-item-2-person-svg" />
+              <span>soheil parsaee</span>
+            </p>
+            <p id="grid-1-item-2-price" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/price.svg" alt="" id="grid-1-item-2-price-svg" />
+              <span>1,500,000T</span>
+            </p>
+          </div>
+        </a>
+
+        <a href="" id="grid-1-item-3" class="group relative flex flex-col items-center rounded-[5px] border-[3px] border-solid border-[--theme-color] text-white">
+          <!-- <img src="image/arch_flat (1).png" alt="" class="group-hover:translate-x-[500%] z-[1] w-[20%] left-[9%] top-[18%] -translate-x-[50%] -translate-y-[50%]  absolute mix-blend-screen contrast-[10] transition duration-[0.2s] ease-linear"> -->
+          <img src="image/3.jpg" id="grid-1-item-3-img" alt="" class="w-full" />
+          <span class="pt-[5px] text-[1.1rem] group-hover:opacity-[0] absolute bg-gradient-to-b from-[--g3] via-[--g4] to-[--g5] w-full h-[20%] color-[--text-1] text-center transition duration-[0.2s] ease-linear">see course</span>
+          <div id="grid-1-item-3-info-div" class="group-hover:opacity-[100%] absolute w-full h-full bg-gradient-to-b from-[--g1] to-[--g2] opacity-[0] transition duration-[0.2s] ease-linear flex flex-col items-start gap-[5px] text-white">
+            <p id="grid-1-item-3-course-name" class="flex gap-[5px] flex-1 w-full flex items-center pl-[10px]">
+              <img src="image/info-light.svg" alt="" id="grid-1-item-3-info-svg" />
+              <span>admin panel with NUXT3</span>
+            </p>
+            <p id="grid-1-item-3-teacher-name" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/person.svg" alt="" id="grid-1-item-3-person-svg" />
+              <span>mohammad eshraghi</span>
+            </p>
+            <p id="grid-1-item-3-price" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/price.svg" alt="" id="grid-1-item-3-price-svg" />
+              <span>200,000T</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+
+      <p id="grid-2-header" class="mt-[100px] text-[--text-1]">popular courses</p>
+      <div id="grid-2" class="gap-[20px] mt-[10px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <a href="" id="grid-2-item-1" class="group relative flex flex-col items-center rounded-[5px] border-[3px] border-solid border-[--theme-color] text-white">
+          <!-- <img src="image/arch_flat (1).png" alt="" class="group-hover:translate-x-[500%] z-[1] w-[20%] left-[9%] top-[18%] -translate-x-[50%] -translate-y-[50%]  absolute mix-blend-screen contrast-[10] transition duration-[0.2s] ease-linear"> -->
+          <img src="image/4.jpg" id="grid-2-item-1-img" alt="" class=" w-full" />
+          <span class="pt-[5px] text-[1.1rem] group-hover:opacity-[0] absolute bg-gradient-to-b from-[--g3] via-[--g4] to-[--g5] w-full h-[20%] color-[--text-1] text-center transition duration-[0.2s] ease-linear">see course</span>
+          <div id="grid-2-item-1-info-div" class="group-hover:opacity-[100%] absolute w-full h-full bg-gradient-to-b from-[--g1] to-[--g2] opacity-[0] transition duration-[0.2s] ease-linear flex flex-col items-start gap-[5px] text-white">
+            <p id="grid-2-item-1-course-name" class="flex gap-[5px] flex-1 w-full flex items-center pl-[10px]">
+              <img src="image/info-light.svg" alt="" id="grid-2-item-1-info-svg" />
+              <span>Laravel framework</span>
+            </p>
+            <p id="grid-2-item-1-teacher-name" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/person.svg" alt="" id="grid-2-item-1-person-svg" />
+              <span>iman hashemi</span>
+            </p>
+            <p id="grid-2-item-1-price" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/price.svg" alt="" id="grid-2-item-1-price-svg" />
+              <span>2,000,000T</span>
+            </p>
+          </div>
+        </a>
+
+        <a href="" id="grid-2-item-2" class="group relative flex flex-col items-center rounded-[5px] border-[3px] border-solid border-[--theme-color] text-white">
+          <!-- <img src="image/arch_flat (1).png" alt="" class="group-hover:translate-x-[500%] z-[1] w-[20%] left-[9%] top-[18%] -translate-x-[50%] -translate-y-[50%]  absolute mix-blend-screen contrast-[10] transition duration-[0.2s] ease-linear"> -->
+          <img src="image/5.jpg" id="grid-2-item-2-img" alt="" class="w-full" />
+          <span class="pt-[5px] text-[1.1rem] group-hover:opacity-[0] absolute bg-gradient-to-b from-[--g3] via-[--g4] to-[--g5] w-full h-[20%] color-[--text-1] text-center transition duration-[0.2s] ease-linear">see course</span>
+          <div id="grid-2-item-2-info-div" class="group-hover:opacity-[100%] absolute w-full h-full bg-gradient-to-b from-[--g1] to-[--g2] opacity-[0] transition duration-[0.2s] ease-linear flex flex-col items-start gap-[5px] text-white">
+            <p id="grid-2-item-2-course-name" class="flex gap-[5px] flex-1 w-full flex items-center pl-[10px]">
+              <img src="image/info-light.svg" alt="" id="grid-2-item-2-info-svg" />
+              <span>front tutorial from scratch</span>
+            </p>
+            <p id="grid-2-item-2-teacher-name" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/person.svg" alt="" id="grid-2-item-2-person-svg" />
+              <span>hosein enayati</span>
+            </p>
+            <p id="grid-2-item-2-price" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/price.svg" alt="" id="grid-2-item-2-price-svg" />
+              <span>1,500,000T</span>
+            </p>
+          </div>
+        </a>
+
+        <a href="" id="grid-2-item-3" class="group relative flex flex-col items-center rounded-[5px] border-[3px] border-solid border-[--theme-color] text-white">
+          <!-- <img src="image/arch_flat (1).png" alt="" class="group-hover:translate-x-[500%] z-[1] w-[20%] left-[9%] top-[18%] -translate-x-[50%] -translate-y-[50%]  absolute mix-blend-screen contrast-[10] transition duration-[0.2s] ease-linear"> -->
+          <img src="image/6.jpg" id="grid-2-item-3-img" alt="" class="w-full" />
+          <span class="pt-[5px] text-[1.1rem] group-hover:opacity-[0] absolute bg-gradient-to-b from-[--g3] via-[--g4] to-[--g5] w-full h-[20%] color-[--text-1] text-center transition duration-[0.2s] ease-linear">see course</span>
+          <div id="grid-2-item-3-info-div" class="group-hover:opacity-[100%] absolute w-full h-full bg-gradient-to-b from-[--g1] to-[--g2] opacity-[0] transition duration-[0.2s] ease-linear flex flex-col items-start gap-[5px] text-white">
+            <p id="grid-2-item-3-course-name" class="flex gap-[5px] flex-1 w-full flex items-center pl-[10px]">
+              <img src="image/info-light.svg" alt="" id="grid-2-item-3-info-svg" />
+              <span>seo tutorial</span>
+            </p>
+            <p id="grid-2-item-3-teacher-name" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/person.svg" alt="" id="grid-2-item-3-person-svg" />
+              <span>mohammad ahmadi</span>
+            </p>
+            <p id="grid-2-item-3-price" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/price.svg" alt="" id="grid-2-item-3-price-svg" />
+              <span>200,000T</span>
+            </p>
+          </div>
+        </a>
+
+        <a href="" id="grid-2-item-4" class="group relative flex flex-col items-center rounded-[5px] border-[3px] border-solid border-[--theme-color] text-white">
+          <!-- <img src="image/arch_flat (1).png" alt="" class="group-hover:translate-x-[500%] z-[1] w-[20%] left-[9%] top-[18%] -translate-x-[50%] -translate-y-[50%]  absolute mix-blend-screen contrast-[10] transition duration-[0.2s] ease-linear"> -->
+          <img src="image/7.jpg" id="grid-2-item-4-img" alt="" class="w-full" />
+          <span class="pt-[5px] text-[1.1rem] group-hover:opacity-[0] absolute bg-gradient-to-b from-[--g3] via-[--g4] to-[--g5] w-full h-[20%] color-[--text-1] text-center transition duration-[0.2s] ease-linear">see course</span>
+          <div id="grid-2-item-4-info-div" class="group-hover:opacity-[100%] absolute w-full h-full bg-gradient-to-b from-[--g1] to-[--g2] opacity-[0] transition duration-[0.2s] ease-linear flex flex-col items-start gap-[5px] text-white">
+            <p id="grid-2-item-4-course-name" class="flex gap-[5px] flex-1 w-full flex items-center pl-[10px]">
+              <img src="image/info-light.svg" alt="" id="grid-2-item-4-info-svg" />
+              <span>seo tutorial</span>
+            </p>
+            <p id="grid-2-item-4-teacher-name" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/person.svg" alt="" id="grid-2-item-4-person-svg" />
+              <span>mohammad ahmadi</span>
+            </p>
+            <p id="grid-2-item-4-price" class="flex gap-[5px] flex-1 w-full border-t-[2px] border-[white] border-solid flex items-center pl-[10px]">
+              <img src="image/price.svg" alt="" id="grid-2-item-4-price-svg" />
+              <span>200,000T</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <script src="js.js"></script>
+  </body>
+</html>
